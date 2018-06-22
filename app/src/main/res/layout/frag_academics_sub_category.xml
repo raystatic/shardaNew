@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_sub_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+<!--        <FrameLayout
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:id="@+id/fl_sub_category"
+            >-->
+
+            <ImageView
+                android:id="@+id/iv_sub_category_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:cropToPadding="true"
+                android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tv_sub_category_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_sub_category_image"
+            android:layout_centerHorizontal="true"
+            android:text="hello and location ssdfsfs ksdhddsfhsdj hsdjfhsdjf hsdjfhsdjfh sfjhsdfjshdfj hjsfsdf"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/dimen_15dp"
+            android:maxLines="2"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:src="@mipmap/logo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_in_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/ripple_effect_google"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp">
+
+        <ImageView
+            android:id="@+id/iv_google_image"
+            android:layout_width="@dimen/dimen_25dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/google_plus">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_sign_in_with_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_toRightOf="@id/iv_google_image"
+            android:text="@string/login_with_google"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/colorWhite">
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_in_with_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_sign_in_with_google"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:onClick="onClick"
+        android:background="@drawable/ripple_effect_facebook"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp">
+
+        <FrameLayout
+            android:id="@+id/framlayout_start_with_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fb_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_fb_image"
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/facebook">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_sign_in_with_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_toRightOf="@id/iv_fb_image"
+                android:text="@string/login_with_facebook"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:textColor="@color/colorWhite">
+            </TextView>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_sign_in_with_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:includeFontPadding="true"
+        android:text="@string/skip"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="@dimen/dimen_17dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_start_with_sharda_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dimen_23dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/corner_button_transparent"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/start_with"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_already_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_start_with_sharda_acc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:includeFontPadding="true"
+        android:textSize="@dimen/dimen_16dp"
+        android:visibility="invisible"
+        android:text="@string/already_have_account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite">
+    </TextView>
+    <!--
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+    -->
+</RelativeLayout>

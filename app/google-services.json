@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1001635770740",
+    "firebase_url": "https://shardauniversity-297d4.firebaseio.com",
+    "project_id": "shardauniversity-297d4",
+    "storage_bucket": "shardauniversity-297d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001635770740:android:3d0a6faa16aa4f93",
+        "android_client_info": {
+          "package_name": "com.shardatech.shardauniversity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001635770740-l9cqasicoa5fqbl0sks6i86rqep90ane.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shardatech.shardauniversity",
+            "certificate_hash": "106edb93e32bc6537cb8d72ae47f3816322f558e"
+          }
+        },
+        {
+          "client_id": "1001635770740-8fghv7pdqr193h9cu1id6ht7jkti7pb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shardatech.shardauniversity",
+            "certificate_hash": "e7853921faa6dbb8e4655c98b681e0d14d906546"
+          }
+        },
+        {
+          "client_id": "1001635770740-cv9holbjorfkt86tadqsps7g1kqtdd64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI_q2JpMPQMDe53Dh4SBBndgFC5Z-Gw90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001635770740-cv9holbjorfkt86tadqsps7g1kqtdd64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

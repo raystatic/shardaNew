@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/tv_otp_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:text="Relax! While we verify your mobile number"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/dimen_20dp" />
+
+        <TextView
+            android:id="@+id/tv_otp_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_otp_verify"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="(Enter the OTP below.) 50 second left..."
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/dimen_16dp" />
+
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_otp_verify"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_35dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            app:pinAnimationType="popIn"
+            app:pinBackgroundIsSquare="false"
+            app:pinLineColors="@color/colorNavHome"
+            app:pinLineStroke="2dp"
+            app:pinLineStrokeSelected="4dp" />
+
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_pin_entry"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:background="@drawable/ripple_effect_submit_norma_backl"
+            android:clickable="true"
+            android:text="Verify"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_verify"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did not get OTP ?"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/dimen_14dp" />
+
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_resend"
+            android:text="Resend"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/dimen_16dp" />
+        </RelativeLayout>
+    </RelativeLayout>

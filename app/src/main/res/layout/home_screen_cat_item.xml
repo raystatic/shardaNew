@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <method.TriangleBackgroundView
+        android:id="@+id/triangle_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:color1="@color/colorGreen"
+        app:color2="@color/colorRed"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:id="@+id/iv_category_image"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:background="@android:color/transparent"
+            android:id="@+id/tv_category_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_category_image"
+            android:layout_marginTop="@dimen/dimen_28dp"
+            android:layout_centerHorizontal="true"
+            android:text="hello"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="@dimen/dimen_15dp"
+            />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_frag_type_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_google_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:paddingRight="@dimen/dimen_15dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:background="@color/colorOppositeMapTransparency"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/college_map_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Sharda University"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/college_map_text_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Plot Number 32-34, Kowldge Park |||, Greater Noida"
+                        android:textColor="@color/colorBlackLight"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/dimen_14dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_distance_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            android:layout_width="@dimen/dimen_16dp"
+                            android:layout_height="@dimen/dimen_18dp"
+                            android:layout_marginTop="@dimen/dimen_1dp"
+                            android:layout_marginLeft="-2dp"
+                            android:src="@drawable/location_on_black"/>
+
+                        <TextView
+                            android:id="@+id/college_map_text_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:text="Fetching distance..."
+                            android:layout_marginLeft="@dimen/dimen_2dp"
+                            android:layout_toRightOf="@id/iv_location"
+                            android:textSize="@dimen/dimen_13dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/google_map_direction"
+                    android:layout_width="@dimen/dimen_55dp"
+                    android:layout_height="@dimen/dimen_55dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/direction"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:id="@+id/view_below_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/card_view_map"
+            android:background="@color/colorBlackLight" />
+
+        <RelativeLayout
+            android:id="@+id/ll_view_all_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:elevation="@dimen/dimen_20dp"
+            android:layout_below="@id/view_below_card_view">
+
+            <TextView
+                android:id="@+id/tv_other_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/related_places"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:id="@+id/tv_all_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="@drawable/corner_button_all_places"
+                android:layout_alignParentRight="true"
+                android:text="@string/all_places"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_14dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_below_other_places"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ll_view_all_places"
+            android:background="@color/colorGrayLight" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sub_maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_below_other_places"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

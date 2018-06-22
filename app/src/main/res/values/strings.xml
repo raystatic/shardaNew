@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Sharda University</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="welcome_slide_1_title">Hello ShardaTech!</string>
+    <string name="welcome_slide_1_details">Sharda Tech provides a comprehensive portfolio of services and solutions for PeopleSoft,Mobile Applications and Digital Marketing.</string>
+
+    <string name="welcome_slide_2_title">Welcome to ShardaTech!</string>
+    <string name="welcome_slide_2_details">We deliver high quality technology solutions that enable Customer’s to meet their business goals more efficiently.</string>
+
+    <string name="welcome_slide_3_title">Welcome to Sharda university</string>
+    <string name="welcome_slide_3_details">Sharda University is a private university in Greater Noida, Delhi NCR, India.</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="view_map_places">Places</string>
+    <string name="map_filter">Filter</string>
+
+    <string name="slider5">&amp; Corporates Visited</string>
+
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_profile">My Profile</string>
+
+    //Common String...
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="start_with">Start With</string>
+    <string name="start">GOT IT</string>
+
+    //Drawer String...
+    <string name="login">Login</string>
+    <string name="logout">LogOut</string>
+    <string name="home">Home</string>
+    <string name="about">About </string>
+    <string name="contact_us">Contact Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms">Terms And Conditions</string>
+    <string name="more">More</string>
+    <string name="feedback_us">Contact Information</string>
+
+    <string name="contact_us_phone">01204570000</string>
+    <string name="contact_us_email">product@shardatech.org</string>
+    <string name="enquiry">Enquiry</string>
+
+    <string name="contact_us_email_id">product@shardatech.org</string>
+    <string name="contact_us_phone_num">01204570000</string>
+
+    <string name="contact_us_or">OR</string>
+
+    // aleartDialogForFillInformation
+    <string name="aleart_dialog_for_fill_info_title">Fill missing Information</string>
+    <string name="aleart_dialog_for_fill_info_message">Please fill the contact or email.</string>
+    <string name="aleart_dialog_for_fill_info_message_feedback">Please fill up the feedback box.</string>
+
+    // aleartDialogSubmitForm
+    <string name="aleart_dialog_for_submit_contact_form_title">Thank You</string>
+    <string name="aleart_dialog_for_submit_contact_form_message">Thank you for contacting us, We will contact you shortly.</string>
+    <string name="fill_contact_info_1000_word_length">1000</string>
+    <string name="aleart_dialog_for_submit_temple_form_message">Thank you for submitting temple details, We will contact you shortly.</string>
+
+    // aleartDialogSubmitForm
+    <string name="aleart_dialog_for_feedback_submit">Thank you for providing us the feedback. We will improve the app with the next version.</string>
+
+    // aleartDialogForResponceFailed
+    <string name="aleart_dialog_for_response_failed_title">Response Failed</string>
+    <string name="aleart_dialog_for_response_failed_message">Please try after some time.</string>
+    <string name="aleart_dialog_for_response_failed_message_edittexts">Please try after some time and check your internet connection.</string>
+
+    // aleartDialogForSkip
+    <string name="aleart_dialog_for_skip_title">skip registration.</string>
+    <string name="aleart_dialog_for_skip_message">You can register your temple from setting button in app.</string>
+
+
+    //Login Screen...
+    <string name="login_with_google">Start With Google</string>
+    <string name="login_with_facebook">Start With Facebook</string>
+    <string name="sign_in_with_email">Sign in with email</string>
+
+    //AlertDialog for InterNet...
+    <string name="aleart_dialog_for_internet_title">No Internet</string>
+    <string name="aleart_dialog_for_internet_message">Please check your internet connection.</string>
+
+    //Facebook App Id...
+
+<!--    <string name="facebook_app_id">472483576453150</string>
+    <string name="fb_login_protocol_scheme">fb472483576453150</string>-->
+    <string name="facebook_app_id">318248335353748</string>
+    <string name="fb_login_protocol_scheme">fb318248335353748</string>
+
+
+    // Map Screen...
+    <string name="related_places">Related Places</string>
+    <string name="all_places">All Places</string>
+    <string name="view_all">View All</string>
+    <string name="call_now">Call Now</string>
+    <string name="latest_news">Latest News...</string>
+    <string name="details">Details</string>
+    <string name="download_pdf">Download Pdf for more Details...</string>
+    <string name="web_view_facility">Click here for more Details...</string>
+
+</resources>

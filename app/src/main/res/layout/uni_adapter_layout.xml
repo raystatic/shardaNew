@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff000000">
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:tag="image_tag"/>
+
+            <RelativeLayout
+                android:id="@+id/above_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#99111111"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+                <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                    android:id="@+id/likeButton"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mfb_animate_favorite="true"
+                    app:mfb_animate_unfavorite="false"
+                    app:mfb_padding="10"
+                    app:mfb_rotation_duration="400"
+                    app:mfb_rotation_angle="360"
+                    app:mfb_bounce_duration="300"
+                    android:layout_marginTop="-3dp"
+                    android:tint="@color/colorWhite"
+                    app:mfb_color="@color/red"
+                    app:mfb_type="heart"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/linearLayout"
+                    android:layout_toLeftOf="@+id/linearLayout" />
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/linearLayout"
+                    android:layout_alignParentRight="true">
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_eye"
+                        android:tint="@color/colorWhite"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/views"
+                        android:padding="2dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@+id/tv_distance_tab4"
+                        android:text="880 views"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/enrollLayout"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/enroll_button_background"
+                    android:orientation="horizontal"
+                    android:layout_alignBottom="@+id/location"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_alignLeft="@+id/linearLayout">
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_enroll"
+                        android:tint="@color/colorWhite"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@+id/tv_distance_tab4"
+                        android:text="ENROLL"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@color/colorWhite"
+                    android:padding="3dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_toStartOf="@+id/textView"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/textView" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Coimbatore Institute Of Technology"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp"
+
+                    android:layout_marginLeft="-10dp"
+                    android:layout_above="@+id/location"
+                    android:layout_toRightOf="@+id/imageView3"/>
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/colorWhite"
+                    android:id="@+id/imageView3"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_alignParentBottom="true"
+                    />
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="170dp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="2"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Coimbatore, Tamil Nadu"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="17dp"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_below="@+id/imageView"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/rel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/fabColor"
+                        android:background="@drawable/pitchers_btn_background"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_entrance"
+                            android:tint="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/tv_KM_tab4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/tv_distance_tab4"
+                            android:text="Merit"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pitchers_btn_background"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_orgg"
+                            android:tint="@color/colorWhite"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/type"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/tv_distance_tab4"
+                            android:text="Private"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="9dp"
+                        android:background="@drawable/pitchers_btn_background"
+                        android:backgroundTint="@color/color_tab_3"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center_vertical"
+                            android:padding="1dp"
+                            android:src="@drawable/ic_rating"
+                            android:tint="@color/colorWhite"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_toRightOf="@+id/loc_icon"
+                            android:text="5.0"
+
+                            android:id="@+id/ratingtext"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/tv_distance_tab4"
+                            android:text="Rating"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cal_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/pitchers_btn_background"
+                        android:backgroundTint="@color/example_color1">
+
+                        <ImageView
+                            android:id="@+id/call_icon"
+                            android:layout_width="10dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="2dp"
+                            android:padding="1dp"
+                            android:src="@drawable/ic_phone"
+                            android:tint="@color/colorWhite"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/call_icon"
+                            android:text="Call"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

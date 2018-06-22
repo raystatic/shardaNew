@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_effect_normal"
+    android:padding="@dimen/dimen_5dp">
+
+    <ImageView
+        android:id="@+id/iv_map_category_image"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"/>
+
+    <TextView
+        android:id="@+id/tv_map_main_place_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toRightOf="@id/iv_map_category_image"
+        android:text="Admission"
+        android:gravity="center"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/dimen_13dp" />
+
+    <TextView
+        android:id="@+id/tv_map_place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/tv_map_main_place_category"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_toRightOf="@id/iv_map_category_image"
+        android:text="Admission Cell"
+        android:textStyle="normal"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_16dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_view_all_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_2dp"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/iv_map_category_image"
+        android:layout_below="@id/tv_map_place_name">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_18dp"
+            android:layout_marginTop="@dimen/dimen_1dp"
+            android:src="@drawable/location_green"/>
+
+        <TextView
+            android:id="@+id/tv_map_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_location"
+            android:layout_marginLeft="@dimen/dimen_2dp"
+            android:text="3 km "
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/dimen_14dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

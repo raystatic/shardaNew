@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_slider5"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text1_main_slider"
+        android:layout_marginBottom="2sp"/>
+
+    <TextView
+        android:id="@+id/text1_main_slider"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/gentium_basic_bold"
+        android:text="2000+ MNC's"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1_main_slider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8sp"
+        android:text="@string/slider5"
+        android:textColor="@color/colorRedLight"/>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<RelativeLayout
+    android:id="@+id/rl_generic_facility_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:background="@drawable/ractangle_shape_stroke"-->
+    <ImageView
+        android:id="@+id/iv_notification_facility_image"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:src="@drawable/ic_menu_camera"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"/>
+
+    <TextView
+        android:id="@+id/tv_notification_facility_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toRightOf="@id/iv_notification_facility_image"
+        android:text="Admission"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/dimen_15dp" />
+
+    <TextView
+        android:id="@+id/tv_notification_facility_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_below="@id/tv_notification_facility_name"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_toRightOf="@id/iv_notification_facility_image"
+        android:text="Admission Cell details"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_13dp" />
+
+    <View
+        android:id="@+id/view_dashed_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_height="2dp"
+        android:background="@drawable/dashed_line"
+        android:layerType="software"
+        android:layout_below="@id/tv_notification_facility_details" />
+
+</RelativeLayout>

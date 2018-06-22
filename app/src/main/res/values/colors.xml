@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D2B4C</color>
+    <color name="colorPrimaryDark">#04203F</color>
+    <color name="colorPrimaryLight">#0D2B4C</color>
+    <color name="colorAccent">#1849FD</color>
+<!--FF4081-->
+
+
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLight">#4c4c4c</color>
+    <color name="colorBlackLight1">#666666</color>
+    <color name="colorBlackTransparancy">#90000000</color>
+    <color name="color_tab_3">#47bc64</color>
+    <color name="red">#FF0000</color>
+    <color name="example_color1">#E91E63</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteLight">#FEFEFE</color>
+    <color name="colorWhiteTransparancy">#60FFFFFF</color>
+    <color name="colorWhiteLightLight">#e5e5e5</color>
+    <color name="colorBlackLightLight">#cccccc</color>
+    <color name="colorRed">#ED1E35</color>
+    <color name="colorRedLight">#FF4426</color>
+    <color name="colorEditTextBorder">#4B6889</color>
+    <color name="colorNavSideBarTopView">#1849FD</color>
+    <color name="colorGreenEventTime">#15C898</color>
+    <color name="colorGreen">#06AE99</color>
+    <color name="colorOrange">#ff6428</color>
+    <color name="colorGrayDark">#8C8C8C</color>
+    <color name="colorGrayLight">#C5C5C5</color>
+    <color name="colorNavHome">#062EC3</color>
+    <color name="colorPurpul">#a856aa</color>
+
+    <color name="colorOppositeMapTransparency">#E6FFFFFF</color>
+
+    <color name="colorTransparent">#BB000000</color>
+
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="colorStaticPages">#25AEE4</color>
+
+</resources>
